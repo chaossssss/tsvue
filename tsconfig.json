@@ -18,6 +18,12 @@
     "paths": {
       "@/*": [
         "src/*"
+      ],
+      "@components/*": [
+        "./components/*"
+      ],
+      "@static/*": [
+        "./static/*"
       ]
     },
     "lib": [
