@@ -1,9 +1,9 @@
 <template>
   <div class="hello">
     <div>+</div>
-    <!-- <div>{{ times }}</div>
-    <div>{{ text }}</div> -->
-    <div>{{ ValA }}</div>
+    <div>{{ times }}</div>
+    <div>{{ text }}</div>
+    <div>{{ ValA + computedA }}</div>
   </div>
 </template>
 
@@ -14,12 +14,15 @@ import { Component, Prop, Vue } from 'vue-property-decorator'
 export default class Calc extends Vue {
   ValA: string = "hello world";
   ValB: number = 222;
-  // data(): { times: number; text: string } {
-  //   return {
-  //     times: 2,
-  //     text: '2222'
-  //   }
-  // }
+  data(): { times: number; text: string } {
+    return {
+      times: 2,
+      text: '2222'
+    }
+  }
+  get computedA(){
+    return 222
+  }
   @Prop() private msg!: string
 }
 </script>
