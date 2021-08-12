@@ -3,6 +3,7 @@
     <img alt="Vue logo" src="../assets/logo.png" />
     <Charts />
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+    <Map />
     <div>
       <svg width="320" height="320" xmlns="http://www.w3.org/2000/svg">
         <g>
@@ -28,10 +29,12 @@
 import { Component, Vue } from 'vue-property-decorator'
 import HelloWorld from '@/components/HelloWorld.vue' // @ is an alias to /src
 import Charts from '@/components/Charts/Charts.vue'
+import Map from '@/components/Map/Map.vue'
 @Component({
   components: {
     HelloWorld,
     Charts,
+    Map,
   }
 })
 export default class Home extends Vue {}
