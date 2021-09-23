@@ -12,6 +12,7 @@ import { Component, Prop, Vue } from 'vue-property-decorator'
 
 @Component
 export default class Calc extends Vue {
+  // 就是data数据
   ValA: string = "hello world";
   ValB: number = 222;
   data(): { times: number; text: string } {

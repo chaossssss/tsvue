@@ -3,11 +3,10 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator'
+import { Component, Vue } from 'vue-property-decorator'
 
 @Component
 export default class Map extends Vue {
-  @Prop() private msg!: string
   initMap() {
     new AMap.Map('container', {
       resizeEnable: true, //是否监控地图容器尺寸变化
